@@ -1,8 +1,8 @@
 module github.com/stevenlawton/xlsReader
 
 require (
-	github.com/metakeule/fmtdate v1.1.2
-	golang.org/x/text v0.3.2
+	gitlab.com/metakeule/fmtdate v1.2.2
+	golang.org/x/text v0.14.0
 )
 
-go 1.13
+go 1.22

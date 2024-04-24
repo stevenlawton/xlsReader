@@ -42,8 +42,8 @@ func TestGetWorkBook(t *testing.T) {
 					t.Error("Expected 'String 3', got ", c.GetString())
 				}
 			case 4:
-				if strings.Contains(c.GetString(), "/xlsReader") {
-					t.Error("Expected '/xlsReader', got ", c.GetString())
+				if strings.Contains(c.GetString(), "xlsReader") {
+					t.Error("Expected 'xlsReader', got ", c.GetString())
 				}
 			case 5:
 				if c.GetString() != "" {

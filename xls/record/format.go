@@ -109,7 +109,7 @@ func (r *Format) GetFormatString(data structure.CellData) string {
 				t := helpers.TimeFromExcelTime(data.GetFloat64(), false)
 				dateFormat := strings.ReplaceAll(r.String(), "HH:MM:SS", "hh:mm:ss")
 				dateFormat = strings.ReplaceAll(dateFormat, "\\", "")
-				dateFormat = strings.ReplaceAll(dateFormat, "mm", "MM")
+				dateFormat = strings.ReplaceAll(dateFormat, "/mm/", "/MM/")
 				dateFormat = strings.ReplaceAll(dateFormat, "yyyy", "YYYY")
 				dateFormat = strings.ReplaceAll(dateFormat, "dd", "DD")
 				return fmtdate.Format(dateFormat, t)

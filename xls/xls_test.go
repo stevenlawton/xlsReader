@@ -2,6 +2,7 @@ package xls
 
 import (
 	"fmt"
+	"strings"
 	"testing"
 )
 
@@ -41,7 +42,7 @@ func TestGetWorkBook(t *testing.T) {
 					t.Error("Expected 'String 3', got ", c.GetString())
 				}
 			case 4:
-				if c.GetString().contains("/xlsReader") {
+				if strings.Contains(c.GetString(), "/xlsReader") {
 					t.Error("Expected '/xlsReader', got ", c.GetString())
 				}
 			case 5:

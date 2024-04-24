@@ -1,3 +1,5 @@
+[![Go](https://github.com/stevenlawton/xlsReader/actions/workflows/go.yml/badge.svg)](https://github.com/stevenlawton/xlsReader/actions/workflows/go.yml)
+
 ## xlsReader
 
 Golang Library for reading xls

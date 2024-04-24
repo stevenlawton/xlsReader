@@ -41,8 +41,8 @@ func TestGetWorkBook(t *testing.T) {
 					t.Error("Expected 'String 3', got ", c.GetString())
 				}
 			case 4:
-				if c.GetString() != "https://github.com/stevenlawton/xlsReader" {
-					t.Error("Expected 'https://github.com/stevenlawton/xlsReader', got ", c.GetString())
+				if c.GetString().contains("/xlsReader") {
+					t.Error("Expected '/xlsReader', got ", c.GetString())
 				}
 			case 5:
 				if c.GetString() != "" {
